@@ -1,20 +1,18 @@
-# valet-plus
-
-About
+# About 
 
 These drivers extend the Valet+ Magento drivers allowing Magento and WordPress to work together using the FishPig integration
 
-Installation
+# Installation
 
 - Copy these files into ~/.valet/Drivers/
 
-Requirements
+# Requirements
 
 - Magento / Magento2
 - WordPress
 - FishPig integration module
 
-Credit
+# Credit
 
 https://github.com/weprovide/valet-plus
 https://fishpig.co.uk/
