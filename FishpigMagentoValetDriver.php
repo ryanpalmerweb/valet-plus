@@ -1,6 +1,6 @@
 <?php
 
-class FishpigValetDriver extends Magento2ValetDriver
+class FishpigMagentoValetDriver extends MagentoValetDriver
 {
     protected $wpDriver;
 
@@ -37,11 +37,11 @@ class FishpigValetDriver extends Magento2ValetDriver
      */
     public function serves($sitePath, $siteName, $uri)
     {
-        if (file_exists($sitePath.'/wp/wp-content/themes/fishpig/index.php')) {
-            return true;
+        if (!file_exists($sitePath.'/wp/wp-content/themes/fishpig/index.php')) {
+            return false;
         }
 
-        return false;
+        return parent::serves($sitePath, $siteName, $uri);
     }
 
     /**
