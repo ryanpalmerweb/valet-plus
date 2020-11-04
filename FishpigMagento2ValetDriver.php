@@ -11,7 +11,7 @@ class FishpigMagento2ValetDriver extends Magento2ValetDriver
      * @return boolean
      */
     public function isWordPressUri($uri) {
-      return (stripos($uri, 'wp-admin') !== false || stripos($uri, 'wp-admin') !== false || stripos($uri, 'wp-login') !== false || stripos($uri, 'wp-content') !== false || stripos($uri, 'wp-includes') !== false);
+      return (stripos($uri, '/wp/index.php') !== false || stripos($uri, 'wp-admin') !== false || stripos($uri, 'wp-login') !== false || stripos($uri, 'wp-content') !== false || stripos($uri, 'wp-includes') !== false);
     }
 
     /**
